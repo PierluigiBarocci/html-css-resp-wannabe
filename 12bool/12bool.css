@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container {
-    width: 1170px;
-    margin: 0 auto;
+.row {
+    width: 70%;
+    margin: 80px auto 0;
 }
-.container::after {
+.row::after {
     content: '';
     display: table;
     clear: both;
@@ -88,10 +88,10 @@
     margin-left: calc((100% / 12) * 11)
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
-    .container {
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .row {
         width: 750px;
-        margin: 0 auto;
+        margin: 80px auto 0;
     }
     .col-md-1 {
         width: calc(100% / 12);
@@ -169,8 +169,9 @@
 }
 
 @media screen and (max-width: 768px) {
-    .container {
+    .row {
         width: 100%;
+        margin-top: 80px;
         padding: 0 15px;
     }
     .col-sm-1 {
